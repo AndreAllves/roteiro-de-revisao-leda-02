@@ -43,13 +43,10 @@ public class RepositorioProdutoArrayList implements RepositorioProdutos<Produto>
 	@Override
 	public int procurarIndice(int codigo) {
 		for (int i = 0; i < this.produtos.size(); i++) {
-			if (this.produtos.get(i).getCodigo() == codigo) {
-				return i;
-			}
+			if (this.produtos.get(i).getCodigo() == codigo) return i;
 		}
 	
 		return -1;
-	
 	}
 	
 	

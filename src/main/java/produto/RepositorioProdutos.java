@@ -6,9 +6,9 @@ public interface RepositorioProdutos<T extends Produto> {
 
 	boolean existe(int codigo);
 
-	void inserir(Produto produto);
+	void inserir(T produto);
 
-	void atualizar(Produto produto);
+	void atualizar(T produto);
 
 	void remover(int codigo);
 
